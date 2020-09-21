@@ -12,3 +12,7 @@ $ composer require laravelcollective/html
 Laravel collective was not installed
 
 $ php artisan migrate:refresh --seed
+
+Lesson 3 - Search and filter form
+
+$ php artisan make:controller UserController
