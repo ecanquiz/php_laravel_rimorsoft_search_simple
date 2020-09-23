@@ -16,3 +16,8 @@ $ php artisan migrate:refresh --seed
 Lesson 3 - Search and filter form
 
 $ php artisan make:controller UserController
+
+Lesson 4 - User Pagination
+
+Lesson 5 - Query Scopes - Eloquent
+
