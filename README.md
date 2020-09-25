@@ -21,3 +21,9 @@ Lesson 4 - User Pagination
 
 Lesson 5 - Query Scopes - Eloquent
 
+Lesson 6 - Search and filter
+
+Lesson 7 - We say goodbye to the Search and Filtering course in Laravel
+
+
+
