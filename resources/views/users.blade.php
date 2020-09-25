@@ -20,19 +20,22 @@
 		 <input type="text"
                         name="name",
                         class="form-control"
-                        placeholder="Nombre"/>
+                        placeholder="Nombre"
+                        value="{{ $request->name }}"/>
 	       </div>
                <div class="form-group">
 		 <input type="text"
                         name="email",
                         class="form-control"
-                        placeholder="Email"/>
+                        placeholder="Email"
+                        value="{{ $request->email }}"/>
 	       </div>
                <div class="form-group">
 		 <input type="text"
                         name="bio",
                         class="form-control"
-                        placeholder="Bio"/>
+                        placeholder="Bio"
+                        value="{{ $request->bio }}"/>
                </div>
                <div class="form-group">
 		 <button type="submit" class="btn btn-default">
@@ -42,23 +45,33 @@
              </form>
             </h1>
           </div>
-	  <div class="col-md-8">
-	    <table class="table table-hover table-striped">
-	      <tbody>
-                @foreach($users as $user)
-		<tr>
-                  <td>{{$user->id}}</td>
-                  <td>{{$user->name}}</td>
-                  <td>{{$user->email}}</td>
-                  <td>{{$user->bio}}</td>
-                </tr>
-                @endforeach
-              </tbody>
-            </table>
-            {{ $users->render() }}
-          </div>
+        </div>
+	<div class="col-md-8">
+          <table class="table table-hover table-striped">
+            <tbody>
+              @foreach($users as $user)
+              <tr>
+                <td>{{$user->id}}</td>
+                <td>{{$user->name}}</td>
+                <td>{{$user->email}}</td>
+                <td>{{$user->bio}}</td>
+              </tr>
+              @endforeach
+            </tbody>
+          </table>
+          {{ $users->render() }}
         </div>
       </div>    
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+

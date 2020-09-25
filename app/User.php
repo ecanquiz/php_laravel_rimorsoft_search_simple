@@ -27,23 +27,26 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    //Scope
+    //Query Scope
     public function scopeName($query, $name)
     {
       if ($name)
 	return $query->where('name', 'LIKE', "%$name%");
+	//return $query->orWhere('name', 'LIKE', "%$name%");
     }
 
     public function scopeEmail($query, $email)
     {
-      if ($bio)
+      if ($email)
 	return $query->where('email', 'LIKE', "%$email%");
+	//return $query->orWhere('email', 'LIKE', "%$email%");
     }
 
     public function scopeBio($query, $bio)
     {
       if ($bio)
 	return $query->where('bio', 'LIKE', "%$bio%");
+	//return $query->orWhere('bio', 'LIKE', "%$bio%");
 
     }
 
